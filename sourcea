@@ -156,7 +156,7 @@ function lib:NewTab(name, desc)
 	TabButton.AutoButtonColor = false
 	TabButton.Font = Enum.Font.GothamMedium
 	TabButton.Text = ""
-	TabButton.TextColor3 = Color3.fromRGB(105, 108, 255)
+	TabButton.TextColor3 = Color3.fromRGB(255, 182, 193)
 	TabButton.TextSize = 14.000
 
 	local TabCorner = Instance.new("UICorner")
@@ -170,12 +170,12 @@ function lib:NewTab(name, desc)
 	TabTitle.Size = UDim2.new(1, 0, 1, 0)
 	TabTitle.Font = Enum.Font.GothamBold
 	TabTitle.Text = name
-	TabTitle.TextColor3 = #lib.Tabs == 0 and Color3.fromRGB(105, 108, 255) or Color3.fromRGB(70,70,70) -- SELECTED: Color3.fromRGB(105, 108, 255)
+	TabTitle.TextColor3 = #lib.Tabs == 0 and Color3.fromRGB(255, 182, 193) or Color3.fromRGB(70,70,70) -- SELECTED: Color3.fromRGB(255, 182, 193)
 	TabTitle.TextSize = 14.000
-	TabTitle.TextStrokeColor3 = Color3.fromRGB(105, 108, 255)
+	TabTitle.TextStrokeColor3 = Color3.fromRGB(255, 182, 193)
 
 	local sectionBG = Instance.new("Frame")
-	sectionBG.BackgroundColor3 = Color3.fromRGB(24,24,24)
+	sectionBG.BackgroundColor3 = Color3.fromRGB(0,0,0)
 	sectionBG.Position = UDim2.fromScale(0.284, 0.046)
 	sectionBG.Visible = #lib.Tabs == 0 and true or false
 	sectionBG.Size = UDim2.fromOffset(504, 410)
@@ -194,7 +194,7 @@ function lib:NewTab(name, desc)
 	SectionTitle.Size = UDim2.new(0, 129, 0, 49)
 	SectionTitle.Font = Enum.Font.SourceSansItalic
 	SectionTitle.Text = name
-	SectionTitle.TextColor3 = Color3.fromRGB(105, 122, 141)
+	SectionTitle.TextColor3 = Color3.fromRGB(255, 182, 193)
 	SectionTitle.TextSize = 24.000
 	SectionTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -265,7 +265,7 @@ function lib:NewTab(name, desc)
 			lib.SelectedTab.sectionBG.Visible = true
 			lib.SelectedTab.button.BackgroundColor3 = Color3.fromRGB(45,40,50)
 			lib.SelectedTab.button.BackgroundTransparency = 0
-			lib.SelectedTab.TitleInstance.TextColor3 = Color3.fromRGB(105, 108, 255)
+			lib.SelectedTab.TitleInstance.TextColor3 = Color3.fromRGB(255, 182, 193)
 		end
 	end)
 
@@ -338,7 +338,7 @@ function lib:NewTab(name, desc)
 		ToggleText.Size = UDim2.new(0, 228, 0, 50)
 		ToggleText.Font = Enum.Font.SourceSansSemibold
 		ToggleText.Text = name
-		ToggleText.TextColor3 = Color3.fromRGB(105, 122, 141)
+		ToggleText.TextColor3 = Color3.fromRGB(255, 182, 193)
 		ToggleText.TextSize = 18.000
 		ToggleText.TextTransparency = 0.340
 		ToggleText.TextXAlignment = Enum.TextXAlignment.Left
@@ -381,7 +381,7 @@ function lib:NewTab(name, desc)
 		else
 			ToggleText.TextTransparency = 0
 			ImageLabel.Visible = true
-			Checkbox.BackgroundColor3 = Color3.fromRGB(105, 108, 255)
+			Checkbox.BackgroundColor3 = Color3.fromRGB(255, 182, 193)
 			UIStroke.Color = Color3.fromRGB(72,74,76)
 		end
 
@@ -398,7 +398,7 @@ function lib:NewTab(name, desc)
 				ImageLabel.Visible = true
 
 				game:GetService("TweenService"):Create(ToggleText,TweenInfo.new(0.15),{TextTransparency = 0},"InOut","Sine"):Play()
-				game:GetService("TweenService"):Create(Checkbox,TweenInfo.new(0.15),{BackgroundColor3 = Color3.fromRGB(105, 108, 255)},"InOut","Sine"):Play()
+				game:GetService("TweenService"):Create(Checkbox,TweenInfo.new(0.15),{BackgroundColor3 = Color3.fromRGB(255, 182, 193)},"InOut","Sine"):Play()
 				game:GetService("TweenService"):Create(UIStroke,TweenInfo.new(0.15),{Color = Color3.fromRGB(60,60,60)},"InOut","Sine"):Play()
 
 			end
@@ -761,7 +761,7 @@ function lib:NewTab(name, desc)
 	   Box.Parent = TextBox
 	   Box.Size = UDim2.new(0,333,0,50)
 	   Box.Position = UDim2.new(0.283,0,0,0)
-	   Box.BackgroundColor3 = Color3.fromRGB(24,24,24)
+	   Box.BackgroundColor3 = Color3.fromRGB(0,0,0)
 	   Box.TextColor3 = Color3.fromRGB(105,122,141)
 	   Box.Font = Enum.Font.SourceSansSemibold
 	   Box.BorderSizePixel = 0;
